@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voxcreo Submitter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h4 style="color: red;">Voxcreo Submitter</h4>
+    
+    <div id="settingsForm">
+      <div class="form-group">
+        <label for="submissionUrl">Submission URL</label>
+        <input type="text" id="submissionUrl" placeholder="Enter Voxcreo submission URL">
+      </div>
+      <button id="saveSettings" class="btn">Save Settings</button>
+    </div>
+
+    <div id="submissionControls" class="hidden">
+      <div class="flex-container">
+        <span id="currentSettings"></span>
+        <a href="#" id="editSettings" class="edit-link">Edit</a>
+      </div>
+      <button id="submitToVoxcreo" class="btn btn-success hidden">Submit to Voxcreo</button>
+    </div>
+
+    <div id="statusMessage" class="alert hidden" role="alert"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
